@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  test:
+    image : 551660765733.dkr.ecr.ap-northeast-2.amazonaws.com/decakill_schedule:test
+    build : /home/teamsnowball/decakill/git_repository/B2cBackendDecakillSchedule-product/docker/dev/
+    privileged: true
+    restart: always
+    ports:
+      - "8080:8080"
